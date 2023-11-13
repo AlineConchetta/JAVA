@@ -27,5 +27,8 @@ public class Exercicio01_For {
 			
 		if(contador % 3 == 0 && contador %  5 == 0) {
 			System.out.println(contador + " é múltiplo de 3 e 5\n");}
-		}}}}
+	    }
+	  }
+	}
+}
 		
