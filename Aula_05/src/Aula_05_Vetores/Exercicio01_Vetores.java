@@ -11,27 +11,22 @@ public class Exercicio01_Vetores {
 		int[] numeros = { 2, 5, 1, 3, 4, 9, 7, 8, 10, 6 };
 		int numerosInteiros = 0;
 
-		for (int contador = 0; contador < numeros.length; contador++) {
+		System.out.println("Digite o numero que você quer encontrar");
+		numerosInteiros = leia.nextInt();
 
-			System.out.println("Digite o numero que você quer encontrar");
-			numerosInteiros = leia.nextInt();
+		System.out.println("\n");
 
-			System.out.println("\n");
-
-			int posicao = -1;
-			for (int i = 0; i < numeros.length; i++) {
-				if (numeros[i] == numerosInteiros) {
-					posicao = i;
-					break;
-				}
-			}
-			if (posicao != -1) {
-				System.out.println("O numero " + numerosInteiros + " foi encontrado na posição " + posicao);
-				break;
-			} else {
-				System.out.println("O numero " + numerosInteiros + " não foi encontrado!");
+		int posicao = -1;
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros[i] == numerosInteiros) {
+				posicao = i;
 				break;
 			}
+		}
+		if (posicao != -1) {
+			System.out.println("O numero " + numerosInteiros + " foi encontrado na posição " + posicao);
+		} else {
+			System.out.println("O numero " + numerosInteiros + " não foi encontrado!");
 		}
 	}
 }
